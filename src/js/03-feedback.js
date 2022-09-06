@@ -24,14 +24,12 @@ function onFormSubmit(evt) {
     
 }
  function populateSavedMessage() {
-   const savedMessage = localStorage.getItem(STORAGE_KEY);
-
-     const parceMessage = JSON.parse(savedMessage);
+   const savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY));
    
      if (savedMessage) {
-       const parceMessageEmail = parceMessage.email;
+       const parceMessageEmail = savedMessage.email;
 
-       parceMessageTextarea = parceMessage.message;
+       parceMessageTextarea = savedMessage.message;
      email.value = parceMessageEmail;
      message.value = parceMessageTextarea;
    }
