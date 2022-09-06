@@ -23,7 +23,6 @@ player.on('timeupdate', function (data) {
 
 
 
-
  
 // import Player from '@vimeo/player';
 // import throttle from 'lodash.throttle';
