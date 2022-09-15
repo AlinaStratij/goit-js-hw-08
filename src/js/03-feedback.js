@@ -29,7 +29,7 @@ function onFormSubmit(evt) {
      if (savedMessage) {
        const parceMessageEmail = savedMessage.email;
 
-       parceMessageTextarea = savedMessage.message;
+       const parceMessageTextarea = savedMessage.message;
      email.value = parceMessageEmail;
      message.value = parceMessageTextarea;
    }
