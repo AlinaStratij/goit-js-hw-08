@@ -20,7 +20,8 @@ function onFormSubmit(evt) {
     evt.preventDefault();  
     evt.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY); 
-    console.log(formData)
+  console.log(formData)
+  console.log(`hello`)
     
 }
  function populateSavedMessage() {
